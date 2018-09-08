@@ -40,3 +40,7 @@ Chapter 2
 * obscuring references vs revealing references
 
 * "The path to changeable and maintainable object-oriented software begins with classes that have a single responsibility. Classes that do one thing isolate that thing from the rest of your application. This isolation allows change without consequence and reuse without duplication."
+
+Chapter 3
+
+* "An object depends on another object if, when one object changes, the other might be forced to change in turn."

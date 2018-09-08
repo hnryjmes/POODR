@@ -28,3 +28,5 @@ Chapter 1
 * "Object-oriented applications are made up of objects and the messages that pass between them."
 
 Chapter 2
+
+* TRUE: Transparent, Reasonable, Usable, Exemplary

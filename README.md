@@ -36,3 +36,5 @@ Chapter 2
 * RDD: Responsibility-Driven Design
 
 * "For better or for worse, the patterns you establish today will be replicated forever."
+
+* obscuring references vs revealing references

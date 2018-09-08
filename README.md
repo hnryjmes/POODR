@@ -30,3 +30,9 @@ Chapter 1
 Chapter 2
 
 * TRUE: Transparent, Reasonable, Usable, Exemplary
+
+* Single Responsibility principle
+
+* RDD: Responsibility-Driven Design
+
+* "For better or for worse, the patterns you establish today will be replicated forever."

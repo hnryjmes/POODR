@@ -1,4 +1,8 @@
-Practical Object-Oriented Design in Ruby
-by Sandi Metz
+## Practical Object-Oriented Design in Ruby
+###### by Sandi Metz
 
-notes
+#### Notes
+
+Introduction
+
+* 

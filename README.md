@@ -54,3 +54,5 @@ Chapter 3
 * [decoupling: named references vs direct references] - aka 'dependency injection'
 
 * "Gear is now smarter because it knows less."
+
+* When you can't make so many changes, aim to expose dependencies rather than conceal them

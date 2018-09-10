@@ -51,4 +51,6 @@ Chapter 3
 
 * Each coupling creates a dependency; linked objects act (and are tested) as one
 
-* 
+* [decoupling: named references vs direct references] - aka 'dependency injection'
+
+* "Gear is now smarter because it knows less."

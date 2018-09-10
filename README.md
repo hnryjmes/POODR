@@ -48,3 +48,7 @@ Chapter 3
 * Recognizing Dependencies
 
 * An object has a dependency when it knows: the name of another class (Gear expects a class named Wheel to exist), the name of a message that it intends to send to someone other than self (Gear expects a Wheel instance to respond to diameter), the arguments that a message requires (Gear knows that Wheel.new requires a rim and a tire), the order of those arguments (Gear knows that Wheel takes positional arguments and that the first should be rim, the second, tire).
+
+* Each coupling creates a dependency; linked objects act (and are tested) as one
+
+* 

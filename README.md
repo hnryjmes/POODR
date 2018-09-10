@@ -56,3 +56,7 @@ Chapter 3
 * "Gear is now smarter because it knows less."
 
 * When you can't make so many changes, aim to expose dependencies rather than conceal them
+
+* Using wrappers (Ruby modules) to protect from changes, 'factories'
+
+* Dependencies and direction 

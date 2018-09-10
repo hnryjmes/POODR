@@ -59,4 +59,36 @@ Chapter 3
 
 * Using wrappers (Ruby modules) to protect from changes, 'factories'
 
-* Dependencies and direction 
+* Dependencies and direction: how to choose direction
+
+* "Depend on things that change less often than you do"
+
+* Unpacking that statement, we have that some classes are more likely to change than others (in requirements), concrete classes are more likely to change than abstract classes, changing a class with many dependents might result in many widespread consequences
+
+* "Dependency management is core to creating future-proof applications."
+
+Chapter 4
+
+* How do we create flexible interfaces? What is an interface?
+
+* Visualizing communication patterns as a network of nodes and connections
+
+* Exposed methods are a class's public interface
+
+* Kitchens, kitchen windows, and interfaces
+
+* "The kitchen does many things but does not, thankfully, expose them all to its customers."
+
+* "Using a menu avoids this problem by letting each customer ask for what they want without knowing anything about how the kitchen makes it."
+
+* Public interfaces: reveal primary responsibility, are invoked by others, won't change much, are safe for others to depend on, are thoroughly documented in tests
+
+* Private interfaces: handle implementation details, shouldn't be sent by other objects, can change for any reason, are unsafe for others to depend on, might not be referenced in tests
+
+* Using UML: Unified Modeling Language
+
+* Simple sequence diagrams, deciding who gets what responsibility, asking for 'what' instead of telling 'how'
+
+* Demeter rule: only talk to your immediate neighbors ('only use one dot when calling methods' or 'avoid train wrecks')
+
+* "Focusing on messages reveals objects that might otherwise be overlooked. When messages are trusting and ask for what the sender wants instead of telling the receiver how to behave, objects naturally evolve public interfaces that are flexible and reusable in novel and unexpected ways."

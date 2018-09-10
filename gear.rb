@@ -1,9 +1,13 @@
 class Gear
   attr_reader :chainring, :cog, :wheel
-  def initialize(chainring: 40, cog: 18, wheel:)
+  def initialize(chainring: default_chainring, cog: 18, wheel:)
     @chainring = chainring
     @cog = cog
     @wheel = wheel
+  end
+
+  def default_chainring
+    (100/2) - 10 # silly code, useful example
   end
 
   def gear_inches
@@ -31,3 +35,5 @@ class Wheel
 end
 
 puts Gear.new(wheel: Wheel.new(26, 1.5)).chainring
+
+puts Gear.new(chainring: 52, wheel: Wheel.new(26, 1.5)).chainring

@@ -92,3 +92,7 @@ Chapter 4
 * Demeter rule: only talk to your immediate neighbors ('only use one dot when calling methods' or 'avoid train wrecks')
 
 * "Focusing on messages reveals objects that might otherwise be overlooked. When messages are trusting and ask for what the sender wants instead of telling the receiver how to behave, objects naturally evolve public interfaces that are flexible and reusable in novel and unexpected ways."
+
+Chapter 5
+
+* 

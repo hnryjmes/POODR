@@ -102,3 +102,9 @@ Chapter 5
 * "However, you are not limited to expecting an object to respond to just one interface [...] it can implement many different interfaces."
 
 * "Trip's prepare method firmly believes that its argument contains a preparer of bicycles."
+
+* "...this dependent-laden code is a natural outgrowth of a class-based perspective."
+
+* Don't introduce new dependencies unnecessarily!
+
+* [basically, make generic class requests instead of hard-coding requests for specific classes]

@@ -108,3 +108,7 @@ Chapter 5
 * Don't introduce new dependencies unnecessarily!
 
 * [basically, make generic class requests instead of hard-coding requests for specific classes]
+
+* polymorphism in OOP: "ability of many different objects to respond to the same message"
+
+* this can be achieved through duck typing, as well as inheritance/behaviour sharing

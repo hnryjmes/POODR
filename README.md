@@ -100,3 +100,5 @@ Chapter 5
 * Name comes from the phrase 'if it walks like a duck, talks like a duck...' - i.e. defined by behaviour
 
 * "However, you are not limited to expecting an object to respond to just one interface [...] it can implement many different interfaces."
+
+* "Trip's prepare method firmly believes that its argument contains a preparer of bicycles."

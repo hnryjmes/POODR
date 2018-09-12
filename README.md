@@ -98,3 +98,5 @@ Chapter 5
 * "Duck types are public interfaces that are not tied to any specific class. These across-class interfaces add enormous flexibility to your application by replacing costly dependencies on class with more forgiving dependencies on messages."
 
 * Name comes from the phrase 'if it walks like a duck, talks like a duck...' - i.e. defined by behaviour
+
+* "However, you are not limited to expecting an object to respond to just one interface [...] it can implement many different interfaces."

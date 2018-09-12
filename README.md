@@ -112,3 +112,13 @@ Chapter 5
 * polymorphism in OOP: "ability of many different objects to respond to the same message"
 
 * this can be achieved through duck typing, as well as inheritance/behaviour sharing
+
+Chapter 6
+
+* well-designed code is reusable
+
+* classical inheritance and other kinds of inheritance
+
+* inheritance is "a mechanism for automatic message delegation"
+
+* subclasses and superclasses: messages are forwarded from subclass to superclass

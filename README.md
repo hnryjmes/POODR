@@ -45,7 +45,7 @@ Chapter 3
 
 * "An object depends on another object if, when one object changes, the other might be forced to change in turn."
 
-* Recognizing Dependencies
+* Recognising Dependencies
 
 * An object has a dependency when it knows: the name of another class (Gear expects a class named Wheel to exist), the name of a message that it intends to send to someone other than self (Gear expects a Wheel instance to respond to diameter), the arguments that a message requires (Gear knows that Wheel.new requires a rim and a tire), the order of those arguments (Gear knows that Wheel takes positional arguments and that the first should be rim, the second, tire).
 
@@ -71,7 +71,7 @@ Chapter 4
 
 * How do we create flexible interfaces? What is an interface?
 
-* Visualizing communication patterns as a network of nodes and connections
+* Visualising communication patterns as a network of nodes and connections
 
 * Exposed methods are a class's public interface
 
@@ -85,14 +85,16 @@ Chapter 4
 
 * Private interfaces: handle implementation details, shouldn't be sent by other objects, can change for any reason, are unsafe for others to depend on, might not be referenced in tests
 
-* Using UML: Unified Modeling Language
+* Using UML: Unified Modelling Language
 
 * Simple sequence diagrams, deciding who gets what responsibility, asking for 'what' instead of telling 'how'
 
-* Demeter rule: only talk to your immediate neighbors ('only use one dot when calling methods' or 'avoid train wrecks')
+* Demeter rule: only talk to your immediate neighbours ('only use one dot when calling methods' or 'avoid train wrecks')
 
 * "Focusing on messages reveals objects that might otherwise be overlooked. When messages are trusting and ask for what the sender wants instead of telling the receiver how to behave, objects naturally evolve public interfaces that are flexible and reusable in novel and unexpected ways."
 
 Chapter 5
 
-* 
+* "Duck types are public interfaces that are not tied to any specific class. These across-class interfaces add enormous flexibility to your application by replacing costly dependencies on class with more forgiving dependencies on messages."
+
+* Name comes from the phrase 'if it walks like a duck, talks like a duck...' - i.e. defined by behaviour

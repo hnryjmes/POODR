@@ -45,7 +45,7 @@ Chapter 3
 
 * "An object depends on another object if, when one object changes, the other might be forced to change in turn."
 
-* Recognising Dependencies
+* Recognizing Dependencies
 
 * An object has a dependency when it knows: the name of another class (Gear expects a class named Wheel to exist), the name of a message that it intends to send to someone other than self (Gear expects a Wheel instance to respond to diameter), the arguments that a message requires (Gear knows that Wheel.new requires a rim and a tire), the order of those arguments (Gear knows that Wheel takes positional arguments and that the first should be rim, the second, tire).
 
@@ -71,7 +71,7 @@ Chapter 4
 
 * How do we create flexible interfaces? What is an interface?
 
-* Visualising communication patterns as a network of nodes and connections
+* Visualizing communication patterns as a network of nodes and connections
 
 * Exposed methods are a class's public interface
 
@@ -85,11 +85,11 @@ Chapter 4
 
 * Private interfaces: handle implementation details, shouldn't be sent by other objects, can change for any reason, are unsafe for others to depend on, might not be referenced in tests
 
-* Using UML: Unified Modelling Language
+* Using UML: Unified Modeling Language
 
 * Simple sequence diagrams, deciding who gets what responsibility, asking for 'what' instead of telling 'how'
 
-* Demeter rule: only talk to your immediate neighbours ('only use one dot when calling methods' or 'avoid train wrecks')
+* Demeter rule: only talk to your immediate neighbors ('only use one dot when calling methods' or 'avoid train wrecks')
 
 * "Focusing on messages reveals objects that might otherwise be overlooked. When messages are trusting and ask for what the sender wants instead of telling the receiver how to behave, objects naturally evolve public interfaces that are flexible and reusable in novel and unexpected ways."
 
@@ -97,7 +97,7 @@ Chapter 5
 
 * "Duck types are public interfaces that are not tied to any specific class. These across-class interfaces add enormous flexibility to your application by replacing costly dependencies on class with more forgiving dependencies on messages."
 
-* Name comes from the phrase 'if it walks like a duck, talks like a duck...' - i.e. defined by behaviour
+* Name comes from the phrase 'if it walks like a duck, talks like a duck...' - i.e. defined by behavior
 
 * "However, you are not limited to expecting an object to respond to just one interface [...] it can implement many different interfaces."
 
@@ -111,7 +111,7 @@ Chapter 5
 
 * polymorphism in OOP: "ability of many different objects to respond to the same message"
 
-* this can be achieved through duck typing, as well as inheritance/behaviour sharing
+* this can be achieved through duck typing, as well as inheritance/behavior sharing
 
 Chapter 6
 
@@ -127,7 +127,7 @@ Chapter 6
 
 * You can use UML sequence diagrams to illustrate class relationships
 
-* "The Bicycle class contains behaviour that is appropriate for both a peer and a parent of MountainBike."
+* "The Bicycle class contains behavior that is appropriate for both a peer and a parent of MountainBike."
 
 * Abstract classes and subclasses: abstract classes should not be instantiated, only subclassed
 
@@ -137,4 +137,6 @@ Chapter 6
 
 * common error: forgetting to send super
 
-* "When a subclass sends super, it's effectively declaring that it knows the algorithm; it depends on this knowledge. If the algorithm changes, then the subclasses may break even if their own specialisations are not otherwise affected."
+* "When a subclass sends super, it's effectively declaring that it knows the algorithm; it depends on this knowledge. If the algorithm changes, then the subclasses may break even if their own specializations are not otherwise affected."
+
+* "When your problem is one of needing numerous specializations of a stable, common abstraction, inheritance can be an extremely low-cost solution."

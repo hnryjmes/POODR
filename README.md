@@ -160,3 +160,9 @@ Chapter 7
 * shallow hierarchies (predictable dependencies)
 
 * "When objects that play a common role need to share behavior, they do so via a Ruby module. The code defined in a module can be added to any object, be it an instance of a class, a class itself, or another module."
+
+Chapter 8
+
+* "Combining Objects with Composition"
+
+* composition vs inheritance

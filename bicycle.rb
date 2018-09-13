@@ -53,9 +53,13 @@ road_bike = RoadBike.new(
   size: 'M',
   tape_color: 'red')
 
+puts road_bike.tire_size
+puts road_bike.chain
+
 mountain_bike = MountainBike.new(
   size: 'S',
   front_shock: 'Manitou',
   rear_shock: 'Fox')
 
-puts mountain_bike.spares
+puts mountain_bike.tire_size
+puts mountain_bike.chain

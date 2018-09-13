@@ -3,6 +3,8 @@ class Bicycle
 
   def initialize(**opts)
     @size = opts[:size]
+    @chain = opts[:chain]
+    @tire_size = opts[:tire_size]
   end
 end
 
@@ -44,6 +46,4 @@ mountain_bike = MountainBike.new(
   front_shock: 'Manitou',
   rear_shock: 'Fox')
 
-puts road_bike.size
-
-puts mountain_bike.size
+puts mountain_bike.spares

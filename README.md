@@ -122,3 +122,5 @@ Chapter 6
 * inheritance is "a mechanism for automatic message delegation"
 
 * subclasses and superclasses: messages are forwarded from subclass to superclass
+
+* "Inheritance provides a way to define two objects as having a relationship such that when the first receives a message that it does not understand, it automatically forwards, or delegates, the message to the second."

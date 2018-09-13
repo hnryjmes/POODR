@@ -140,3 +140,9 @@ Chapter 6
 * "When a subclass sends super, it's effectively declaring that it knows the algorithm; it depends on this knowledge. If the algorithm changes, then the subclasses may break even if their own specializations are not otherwise affected."
 
 * "When your problem is one of needing numerous specializations of a stable, common abstraction, inheritance can be an extremely low-cost solution."
+
+Chapter 7
+
+* "Sharing Role Behavior with Modules"
+
+* "When an object includes a module, the methods defined therein become available via automatic delegation."

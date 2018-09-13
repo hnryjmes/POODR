@@ -168,3 +168,37 @@ Chapter 8
 * composition vs inheritance
 
 * using a factory
+
+* aggregation as a special kind of composition
+
+* "The university-department relationship is one of composition (in its strictest sense) and the department-professor relationship is aggregation. Destroying a department does not destroy its professors; they have an existence and life of their own."
+
+* how to arrange code - inheritance or composition?
+
+* "The general rule is that, faced with a problem that composition can solve, you should be biased toward doing so."
+
+* why? generally fewer dependencies
+
+* "At its best, composition results in applications built of simple, pluggable objects that are easy to extend and have a high tolerance for change."
+
+* choosing relationships: use inheritance for is-a relationships, use duck types for behaves-like-a relationships, use composition for has-a relationships
+
+Chapter 9
+
+* Refactoring is changing the internal structure of code in a way that does not affect the external behavior.
+
+* why test? to find bugs, to help document code, to defer design decisions, supporting abstractions, exposing design flaws
+
+* "Your overall goal is to create well-designed applications that have acceptable test coverage."
+
+* BDD and TDD
+
+* using MiniTest...
+
+* mocks: mocks are tests of behavior, rather than tests of state
+
+* Summary
+
+* "Tests are indispensable. Well-designed applications are highly abstract and under constant pressure to evolve; without tests these applications can be neither understood nor safely changed. The best tests are loosely coupled to the underlying code and test everything once and in the proper place. They add value without increasing costs."
+
+* "A well-designed application with a carefully crafted test suite is a joy to behold and a pleasure to extend. It can adapt to every new circumstance and meet and unexpected need."

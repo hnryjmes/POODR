@@ -148,3 +148,15 @@ Chapter 7
 * "When an object includes a module, the methods defined therein become available via automatic delegation."
 
 * objects can respond to many messages: including those it implements directly, those in parent objects, those in its modules, and those in modules of parents
+
+* "Understanding the similarities between classical inheritance and module inclusion is easier if you understand how object-oriented languages, in general, and Ruby, in particular, find the method implementation that matches a message send."
+
+* method lookup: from most to least specific (up the chain)
+
+* 'extend' keyword vs 'include' keyword
+
+* Liskov substitition: "in order for a type system to be sane, subtypes must be substitutable for their supertypes"
+
+* shallow hierarchies (predictable dependencies)
+
+* "When objects that play a common role need to share behavior, they do so via a Ruby module. The code defined in a module can be added to any object, be it an instance of a class, a class itself, or another module."

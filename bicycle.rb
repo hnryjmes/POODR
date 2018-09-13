@@ -11,7 +11,7 @@ class Bicycle
   end
 end
 
-class Parts
+class Parts < Array
   attr_reader :parts
 
   def initialize(parts)
@@ -64,7 +64,7 @@ road_bike =
 
 puts road_bike.size
 
-puts road_bike.spares.inspect
+puts road_bike.spares.size
 
 mountain_bike =
   Bicycle.new(
@@ -73,4 +73,4 @@ mountain_bike =
 
 puts mountain_bike.size
 
-puts mountain_bike.spares.inspect
+puts mountain_bike.spares.size

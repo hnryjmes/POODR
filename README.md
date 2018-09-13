@@ -126,3 +126,7 @@ Chapter 6
 * "Inheritance provides a way to define two objects as having a relationship such that when the first receives a message that it does not understand, it automatically forwards, or delegates, the message to the second."
 
 * You can use UML sequence diagrams to illustrate class relationships
+
+* "The Bicycle class contains behaviour that is appropriate for both a peer and a parent of MountainBike."
+
+* Abstract classes and subclasses: abstract classes should not be instantiated, only subclassed

@@ -13,3 +13,12 @@ class MountainBike < Bicycle
     super.merge(front_shock: front_shock)
   end
 end
+
+mountain_bike = MountainBike.new(
+  size: 'S',
+  front_shock: 'Manitou',
+  rear_shock: 'Fox')
+
+puts mountain_bike.size
+
+puts mountain_bike.spares

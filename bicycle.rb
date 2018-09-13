@@ -12,7 +12,8 @@ class Bicycle
   end
 
   def default_tire_size
-    raise NotImplementedError
+    raise NotImplementedError,
+      "#{self.class} should have implemented..."
   end
 end
 

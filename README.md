@@ -166,3 +166,5 @@ Chapter 8
 * "Combining Objects with Composition"
 
 * composition vs inheritance
+
+* using a factory

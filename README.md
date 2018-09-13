@@ -130,3 +130,5 @@ Chapter 6
 * "The Bicycle class contains behaviour that is appropriate for both a peer and a parent of MountainBike."
 
 * Abstract classes and subclasses: abstract classes should not be instantiated, only subclassed
+
+* deciding between refactoring strategies: what happens if you are wrong?

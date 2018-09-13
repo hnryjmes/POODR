@@ -13,6 +13,12 @@ class RoadBike < Bicycle
     @tape_color = opts[:tape_color]
     super
   end
+
+  def spares
+    { chain: '11-speed',
+      tire_size: '23',
+      tape_color: tape_color }
+  end
 end
 
 class MountainBike < Bicycle

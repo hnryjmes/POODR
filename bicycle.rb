@@ -63,14 +63,30 @@ class MountainBike < Bicycle
   end
 end
 
+class RecumbentBike < Bicycle
+  attr_reader :flag
+
+  def post_initialize(opts)
+    @flag = opts[:flag]
+  end
+
+  def local_spares
+    { flag: flag }
+  end
+
+  def default_chain
+    '10-speed'
+  end
+
+  def default_tire_size
+    '28'
+  end
+end
+
 road_bike =
   RoadBike.new(
     size: 'M',
     tape_color: 'red')
-
-puts road_bike.tire_size
-puts road_bike.chain
-puts road_bike.spares
 
 mountain_bike =
   MountainBike.new(
@@ -78,6 +94,9 @@ mountain_bike =
     front_shock: 'Manitou',
     rear_shock: 'Fox')
 
-puts mountain_bike.tire_size
-puts mountain_bike.chain
-puts mountain_bike.spares
+bent =
+  RecumbentBike.new(
+    size: 'M',
+    flag: 'tall and orange')
+
+puts bent.spares

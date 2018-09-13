@@ -134,3 +134,7 @@ Chapter 6
 * deciding between refactoring strategies: what happens if you are wrong?
 
 * "Any class that uses the template method pattern must supply an implementation for every message it sends, even if the only reasonable implementation in the sending class looks like this... [NotImplementedError]"
+
+* common error: forgetting to send super
+
+* "When a subclass sends super, it's effectively declaring that it knows the algorithm; it depends on this knowledge. If the algorithm changes, then the subclasses may break even if their own specialisations are not otherwise affected."

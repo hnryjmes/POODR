@@ -5,6 +5,11 @@ class Bicycle
     @size = opts[:size]
     @chain = opts[:chain] || default_chain
     @tire_size = opts[:tire_size] || default_tire_size
+
+    post_initialize(opts)
+  end
+
+  def post_initialize(opts)
   end
 
   def default_chain
@@ -28,6 +33,10 @@ class RoadBike < Bicycle
   def initialize(**opts)
     @tape_color = opts[:tape_color]
     super
+  end
+
+  def post_initialize(opts)
+    @tape_color = opts[:tape_color]
   end
 
   def spares

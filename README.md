@@ -132,3 +132,5 @@ Chapter 6
 * Abstract classes and subclasses: abstract classes should not be instantiated, only subclassed
 
 * deciding between refactoring strategies: what happens if you are wrong?
+
+* "Any class that uses the template method pattern must supply an implementation for every message it sends, even if the only reasonable implementation in the sending class looks like this... [NotImplementedError]"

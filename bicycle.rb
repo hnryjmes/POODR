@@ -52,3 +52,17 @@ mountain_config =
    ['tire_size', '2.1'],
    ['front_shock', 'Manitou'],
    ['rear_shock', 'Fox', false]]
+
+road_bike =
+  Bicycle.new(
+    size: 'L',
+    parts: PartsFactory.build(config: road_config))
+
+puts road_bike.spares
+
+mountain_bike =
+  Bicycle.new(
+    size: 'L',
+    parts: PartsFactory.build(config: mountain_config))
+
+puts mountain_bike.spares

@@ -75,3 +75,24 @@ class MountainBikeParts < Parts
     "2.1"
   end
 end
+
+road_bike =
+  Bicycle.new(
+    size: "L",
+    parts: RoadBikeParts.new(tape_color: "red"))
+
+puts road_bike.size
+
+puts road_bike.spares
+
+mountain_bike =
+  Bicycle.new(
+    size: "L",
+    parts: MountainBikeParts.new(
+      front_shock: 'Manitou',
+      rear_shock: "Fox")
+    )
+
+puts mountain_bike.size
+
+puts mountain_bike.spares

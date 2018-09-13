@@ -13,5 +13,31 @@ class RoadBike < Bicycle
     @tape_color = opts[:tape_color]
     super
   end
-
 end
+
+class MountainBike < Bicycle
+  attr_reader :front_shock, :rear_shock
+
+  def initialize(**opts)
+    @front_shock = opts[:front_shock]
+    @rear_shock = opts[:rear_shock]
+    super
+  end
+
+  def spares
+    super.merge(front_shock: front_shock)
+  end
+end
+
+road_bike = RoadBike.new(
+  size: 'M',
+  tape_color: 'red')
+
+mountain_bike = MountainBike.new(
+  size: 'S',
+  front_shock: 'Manitou',
+  rear_shock: 'Fox')
+
+puts road_bike.size
+
+puts mountain_bike.size

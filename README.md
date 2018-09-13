@@ -146,3 +146,5 @@ Chapter 7
 * "Sharing Role Behavior with Modules"
 
 * "When an object includes a module, the methods defined therein become available via automatic delegation."
+
+* objects can respond to many messages: including those it implements directly, those in parent objects, those in its modules, and those in modules of parents

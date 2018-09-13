@@ -15,6 +15,11 @@ class Bicycle
     raise NotImplementedError,
       "#{self.class} should have implemented..."
   end
+
+  def spares
+    { tire_size: tire_size,
+      chain: chain }
+  end
 end
 
 class RoadBike < Bicycle
@@ -26,9 +31,7 @@ class RoadBike < Bicycle
   end
 
   def spares
-    { chain: '11-speed',
-      tire_size: '23',
-      tape_color: tape_color }
+    super.merge(tape_color: tape_color)
   end
 
   def default_tire_size
@@ -55,18 +58,24 @@ class MountainBike < Bicycle
 end
 
 class RecumbentBike < Bicycle
+  attr_reader :flag
+
+  def initialize(**opts)
+    @flag = opts[:flag]
+  end
+
+  def spares
+    super.merge(flag: flag)
+  end
+
   def default_chain
     '10-speed'
   end
+
+  def default_tire_size
+    '28'
+  end
 end
 
-road_bike = RoadBike.new(
-  size: 'M',
-  tape_color: 'red')
-
-mountain_bike = MountainBike.new(
-  size: 'S',
-  front_shock: 'Manitou',
-  rear_shock: 'Fox')
-
-bent = RecumbentBike.new(size: "L")
+bent = RecumbentBike.new(flag: 'tall and orange')
+puts bent.spares

@@ -12,87 +12,65 @@ class Bicycle
 end
 
 class Parts
-  attr_reader :chain, :tire_size
+  attr_reader :parts
 
-  def initialize(**opts)
-    @chain = opts[:chain] || default_chain
-    @tire_size = opts[:tire_size] || default_tire_size
-    post_initialize(opts)
+  def initialize(parts)
+    @parts = parts
   end
 
   def spares
-    { chain: chain,
-    tire_size: tire_size }.merge(local_spares)
-  end
-
-  def default_tire_size
-      raise NotImplementedError
-  end
-
-  # subclasses may override
-  def post_initialize(opts)
-    nil
-  end
-
-  def local_spares
-    {}
-  end
-
-  def default_chain
-    "11-speed"
+    parts.select {|part| part.needs_spare}
   end
 end
 
-class RoadBikeParts < Parts
-  attr_reader :tape_color
+class Part
+  attr_reader :name, :description, :needs_spare
 
-  def post_initialize(**opts)
-    @tape_color = opts[:tape_color]
-  end
-
-  def local_spares
-    { tape_color: tape_color }
-  end
-
-  def default_tire_size
-    "23"
+  def initialize(name:, description:, needs_spare: true)
+    @name = name
+    @description = description
+    @needs_spare = needs_spare
   end
 end
 
-class MountainBikeParts < Parts
-  attr_reader :front_shock, :rear_shock
+chain =
+  Part.new(name: "chain", description: "11-speed")
 
-  def post_initialize(**opts)
-    @front_shock = opts[:front_shock]
-    @rear_shock = opts[:rear_shock]
-  end
+road_tire =
+  Part.new(name: "tire_size", description: "23")
 
-  def local_spares
-    { front_shock: front_shock }
-  end
+tape =
+  Part.new(name: "tape_color", description: "red")
 
-  def default_tire_size
-    "2.1"
-  end
-end
+mountain_tire =
+  Part.new(name: "tire_size", description: "2.1")
+
+rear_shock =
+  Part.new(name: "rear_shock", description: "Fox", needs_spare: false)
+
+front_shock =
+  Part.new(name: "front_shock", description: "Manitou")
+
+road_bike_parts =
+  Parts.new([chain, road_tire, tape])
+
+mountain_bike_parts =
+  Parts.new([chain, mountain_tire, front_shock, rear_shock])
 
 road_bike =
   Bicycle.new(
     size: "L",
-    parts: RoadBikeParts.new(tape_color: "red"))
+    parts: road_bike_parts)
 
 puts road_bike.size
 
-puts road_bike.spares
+puts road_bike.spares.inspect
 
 mountain_bike =
   Bicycle.new(
     size: "L",
-    parts: MountainBikeParts.new(
-      front_shock: 'Manitou',
-      rear_shock: "Fox")
-    )
+    parts: mountain_bike_parts)
 
 puts mountain_bike.size
 
-puts mountain_bike.spares
+puts mountain_bike.spares.inspect
